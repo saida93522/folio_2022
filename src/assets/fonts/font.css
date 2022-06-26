@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Editorial-Ultralight";
+  src: url("./assets/font/Editorial-Ultralight.woff") format("woff"),
+    url("./assets/font/Editorial-Ultralight.woff2") format("woff2");
+}
