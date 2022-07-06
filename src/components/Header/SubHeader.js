@@ -4,7 +4,7 @@ const SubHeader = ({ subTitle }) => {
     <Text
       h3
       className="pb-5 subtitle"
-      css={{ fontSize: "$subtitle" }}
+      css={{ fontSize: "$fs_md" }}
       weight={"semibold"}
       transform={"capitalize"}
     >

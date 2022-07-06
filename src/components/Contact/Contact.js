@@ -1,6 +1,7 @@
 import { Container, Grid, Col, Text, Link } from "@nextui-org/react";
 import Header from "../Header/Header";
 import { CgArrowTopRight } from "@react-icons/all-files/cg/CgArrowTopRight";
+import React from "react";
 
 const Contact = () => {
   const title = "contact";
@@ -18,9 +19,12 @@ const Contact = () => {
         <Container className="space-y-2 md:space-y-4">
           <Grid.Container wrap="wrap" gap={2} justify="flex-start">
             <Header title={title} />
-            <Grid sm={12}>
+            <Grid sm={10}>
               <Col span={10}>
-                <Text className="fs_sm w-5/6 md:w-3/5 ">
+                <Text
+                  className="fs_sm w-5/6 md:w-3/5"
+                  css={{ fontSize: "$fs_sm" }}
+                >
                   Please feel free to reach out if you are interested in working
                   together or if you simply want to say hello. My inbox is
                   always open.
@@ -32,7 +36,7 @@ const Contact = () => {
                 <Link
                   className="fs-lg break-word flex flex-wrap"
                   href="mailto:saidahussen4@gmail.com"
-                  css={{ color: "$titleColor" }}
+                  css={{ color: "$titleColor", fontSize: "$fs_md" }}
                 >
                   saidahussen4@gmail.com
                   <CgArrowTopRight />
@@ -46,4 +50,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default React.memo(Contact);

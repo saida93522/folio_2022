@@ -1,11 +1,12 @@
 import { Container, Grid, Text } from "@nextui-org/react";
 import Header from "../Header/Header";
+import React from "react";
 
 const About = () => {
   const title = "about";
   return (
     <section className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none relative">
-      <div className="hidden sm:block hero-wrapper bg-right lg:bg-center"></div>
+      <div className="hidden sm:block hero-wrapper bg-right lg:bg-center w-full h-auto"></div>
 
       <Container className="space-y-2 md:space-y-4">
         <Grid.Container wrap="wrap" gap={2} className="overflow-scroll">
@@ -33,4 +34,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default React.memo(About);

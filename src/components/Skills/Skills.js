@@ -1,7 +1,7 @@
 import { Container, Grid, Col, Row, Text } from "@nextui-org/react";
 import Header from "../Header/Header";
 import SubHeader from "../Header/SubHeader";
-
+import React from "react";
 import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
 import { SiHtml5 } from "@react-icons/all-files/si/SiHtml5";
 import { DiJavascript1 } from "@react-icons/all-files/di/DiJavascript1";
@@ -26,7 +26,10 @@ const Skills = () => {
   ];
 
   return (
-    <section className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none">
+    <section
+      data-scroll-section
+      className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none"
+    >
       <Container className="space-y-2 md:space-y-4">
         <Grid.Container wrap="wrap" gap={2} justify="flex-start">
           <Header title={title} />
@@ -88,4 +91,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default React.memo(Skills);

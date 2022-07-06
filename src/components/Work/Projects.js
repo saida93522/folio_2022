@@ -11,7 +11,7 @@ export const Projects = ({ item }) => {
           href={item.live}
           target="_blank"
           rel="noopener"
-          css={{ color: "$titleColor", fontSize: "$subtitle" }}
+          css={{ color: "$titleColor", fontSize: "$fs_md" }}
         >
           <SubHeader subTitle={item.title} />
           <span className="align-baseline">
@@ -20,7 +20,7 @@ export const Projects = ({ item }) => {
         </Link>
       </Row>
       <Col>
-        <Text className="fs_ssm w-5/6 md:w-3/5" css={{ fontSize: "$fs_sm" }}>
+        <Text className="fs_sm w-5/6 md:w-3/5" css={{ fontSize: "$fs_sm" }}>
           {item.text}
         </Text>
       </Col>

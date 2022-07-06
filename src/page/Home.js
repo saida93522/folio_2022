@@ -10,9 +10,6 @@ const Home = ({ homeTheme, toggleTheme }) => {
   return (
     <div className="main-app min-w-full min-h-screen top-0 left-0 relative">
       <div className="animate fixed -inset-1/2"></div>
-      {/* <div className="gif_bg absolute inset-0 isolate ">
-        <div className="w-full h-full absolute bg-neutral-800	opacity-90"></div>
-      </div> */}
 
       <Nav homeTheme={homeTheme} toggleTheme={toggleTheme} />
       <main className="main relative overflow-x-hidden w-screen ">
