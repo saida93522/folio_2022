@@ -1,4 +1,4 @@
-import { Container, Grid, Col, Row, Text } from "@nextui-org/react";
+import { Container, Grid, Col, Row, Text, Spacer } from "@nextui-org/react";
 import Header from "../Header/Header";
 import SubHeader from "../Header/SubHeader";
 import React from "react";
@@ -27,64 +27,61 @@ const Skills = () => {
 
   return (
     <section
-      data-scroll-section
+      id="skills"
       className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none"
     >
       <Container className="space-y-2 md:space-y-4">
-        <Grid.Container wrap="wrap" gap={2} justify="flex-start">
-          <Header title={title} />
-          <Grid xs={12} md={6} className="soft-skills">
-            <Col span={9}>
-              <Row wrap={"wrap"} justify={"flex-start"}>
-                <SubHeader subTitle={"Soft skills"} />
-              </Row>
-              <div className="flex flex-wrap items-start">
-                {softSkills.map((skill, key) => (
-                  <Text key={key} css={{ fontSize: "$fs_sm" }}>
-                    ・{skill}
-                  </Text>
-                ))}
-              </div>
-            </Col>
-          </Grid>
+        <Header title={title} />
+        <Grid.Container wrap="wrap" gap={2} justify="center">
+          <Col span={10}>
+            <Row wrap={"wrap"} justify={"flex-start"}>
+              <SubHeader subTitle={"Soft skills"} />
+            </Row>
+            <div className="flex flex-wrap items-start soft-skills">
+              {softSkills.map((skill, key) => (
+                <Text className="w-1/2" key={key} css={{ fontSize: "$fs_sm" }}>
+                  ・{skill}
+                </Text>
+              ))}
+            </div>
+            <Spacer y={1} />
+          </Col>
 
-          <Grid xs={12} md={5} className="tool-skills">
-            <Col>
-              <Row wrap={"wrap"} justify={"flex-start"}>
-                <SubHeader subTitle={"Software and tools"} />
-              </Row>
-              <div className="flex flex-wrap items-start icon-container h-full">
-                <span className="hover:text-zinc-100 hover:bg-orange-600">
-                  <SiHtml5 className="icon" />
-                </span>
+          <Col span={10}>
+            <Row wrap={"wrap"} justify={"flex-start"}>
+              <SubHeader subTitle={"Software and tools"} />
+            </Row>
+            <div className="flex flex-wrap items-start icon-container h-full tool-skills">
+              <span className="hover:text-zinc-100 hover:bg-orange-600">
+                <SiHtml5 className="icon" />
+              </span>
 
-                <span className="hover:text-zinc-100 hover:bg-sky-600">
-                  <SiCss3 className="icon " />
-                </span>
-                <span className="hover:bg-yellow-300 hover:text-black">
-                  <DiJavascript1 className="icon " />
-                </span>
-                <span className="hover:bg-stone-900 hover:text-cyan-400">
-                  <SiReact className="icon " />
-                </span>
-                <span className="hover:text-yellow-300 hover:bg-sky-800">
-                  <SiPython className="icon" />
-                </span>
-                <span className="hover:text-zinc-100 hover:bg-green-800">
-                  <SiDjango className="icon" />
-                </span>
-                <span className="hover:text-zinc-100 hover:bg-violet-800">
-                  <SiBootstrap className="icon " />
-                </span>
-                <span className="hover:text-sky-500 hover:bg-zinc-100">
-                  <SiTailwindcss className="icon " />
-                </span>
-                <span className="hover:text-fuchsia-500 hover:bg-stone-800">
-                  <SiFigma className="icon" />
-                </span>
-              </div>
-            </Col>
-          </Grid>
+              <span className="hover:text-zinc-100 hover:bg-sky-600">
+                <SiCss3 className="icon " />
+              </span>
+              <span className="hover:bg-yellow-300 hover:text-black">
+                <DiJavascript1 className="icon " />
+              </span>
+              <span className="hover:bg-stone-900 hover:text-cyan-400">
+                <SiReact className="icon " />
+              </span>
+              <span className="hover:text-yellow-300 hover:bg-sky-800">
+                <SiPython className="icon" />
+              </span>
+              <span className="hover:text-zinc-100 hover:bg-green-800">
+                <SiDjango className="icon" />
+              </span>
+              <span className="hover:text-zinc-100 hover:bg-violet-800">
+                <SiBootstrap className="icon " />
+              </span>
+              <span className="hover:text-sky-500 hover:bg-zinc-100">
+                <SiTailwindcss className="icon " />
+              </span>
+              <span className="hover:text-fuchsia-500 hover:bg-stone-800">
+                <SiFigma className="icon" />
+              </span>
+            </div>
+          </Col>
         </Grid.Container>
       </Container>
     </section>

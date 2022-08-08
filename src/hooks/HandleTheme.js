@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useDarkMode = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [componentMounted, setComponentMounted] = useState(false);
 
   const setMode = (mode) => {
@@ -10,10 +10,10 @@ const useDarkMode = () => {
   };
 
   const toggleTheme = () => {
-    if (theme === "light") {
-      setMode("dark");
-    } else {
+    if (theme === "dark") {
       setMode("light");
+    } else {
+      setMode("dark");
     }
   };
 
@@ -22,7 +22,7 @@ const useDarkMode = () => {
     if (localTheme) {
       setTheme(localTheme);
     } else {
-      setMode("light");
+      setMode("dark");
     }
     setComponentMounted(true);
   }, []);

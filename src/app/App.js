@@ -11,7 +11,7 @@ const Home = lazy(() => import("../page/Home"));
 function App() {
   const [theme, toggleTheme] = useDarkMode();
 
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const themeMode = theme === "dark" ? darkTheme : lightTheme;
 
   return (
     <Suspense fallback={<Preload />}>

@@ -9,10 +9,10 @@ import { Container } from "@nextui-org/react";
 const Home = ({ homeTheme, toggleTheme }) => {
   return (
     <div className="main-app min-w-full min-h-screen top-0 left-0 relative">
-      <div className="animate fixed -inset-1/2"></div>
-
       <Nav homeTheme={homeTheme} toggleTheme={toggleTheme} />
+
       <main className="main relative overflow-x-hidden w-screen ">
+        <div className="animate fixed -inset-1/2"></div>
         <Container className="absolute bg-neutral-7000	xs:pl-5 sm:pl-14 md:pl-24 lg:pl-28 left-14 md:left-14">
           <Hero />
           <About />

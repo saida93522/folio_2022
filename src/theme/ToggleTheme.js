@@ -3,16 +3,16 @@ import MoonIcon from "./MoonIcon";
 import { Switch } from "@nextui-org/react";
 
 const ToggleTheme = ({ theme, toggleTheme }) => {
-  const isLight = theme === "light";
+  const isDark = theme === "dark";
   return (
     <Switch
-      className="md:space-x-14 switch w-full h-full"
-      checked={isLight}
+      className="md:space-x-14 switch "
+      checked={isDark}
       size="xs"
-      color={"white"}
+      color={"dark"}
       onChange={toggleTheme}
-      iconOff={<MoonIcon filled />}
-      iconOn={<SunIcon filled />}
+      iconOff={<SunIcon filled />}
+      iconOn={<MoonIcon filled />}
       shadow={false}
     ></Switch>
   );

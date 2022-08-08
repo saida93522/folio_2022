@@ -33,12 +33,13 @@ const Nav = (props) => {
 
           <NavbarTop />
           <Link
-            className="transition-all pointer-events-auto relative top-5"
+            className="transition-all pointer-events-auto relative top-9"
             css={{ color: "$titleColor" }}
           >
             <Toggle
               homeTheme={props.homeTheme}
               toggleTheme={props.toggleTheme}
+              width="$fs_sm"
             />
           </Link>
         </Row>

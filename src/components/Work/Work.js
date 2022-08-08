@@ -1,4 +1,4 @@
-import { Grid, Container } from "@nextui-org/react";
+import { Grid, Container, Col } from "@nextui-org/react";
 import { Projects } from "./Projects";
 import React from "react";
 import Header from "../Header/Header";
@@ -26,17 +26,16 @@ const Work = () => {
 
   return (
     <section
-      data-scroll-section
+      id="work"
       className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none"
     >
-      <Container className="space-y-2 md:space-y-4">
-        <Grid.Container gap={2} className="overflow-scroll">
-          <Header title={title} />
-
+      <Container id="work" className="space-y-2 md:space-y-4">
+        <Header title={title} />
+        <Grid.Container gap={2} className="overflow-scroll" justify={"center"}>
           {myProjects.map((item, index) => (
-            <Grid sm={6} key={index}>
+            <Col span={10} key={index}>
               <Projects item={item} />
-            </Grid>
+            </Col>
           ))}
         </Grid.Container>
       </Container>

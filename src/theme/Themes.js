@@ -6,7 +6,7 @@ const fonts = {
 };
 
 const fontSizes = {
-  fs_hero: "clamp(2.55rem, calc(0.77rem + 8.91vw), 8.57rem)",
+  fs_hero: "clamp(2.95rem, calc(4.82rem + -1.94vw), 4.48rem)",
   fs_subHero: "clamp(1.23rem, calc(0.55rem + 3.38vw), 3.51rem)",
   title: "clamp(0.79rem, calc(-0.23rem + 7.63vw), 3.82rem)",
   subtitle: "clamp(0.57rem, calc(0.16rem + 2.05vw), 1.95rem)",
@@ -19,14 +19,19 @@ export const darkTheme = createTheme({
   type: "dark",
 
   theme: {
+    stroke: {
+      strokeColor: "#A78682",
+    },
     colors: {
       // brand colors
+      primary: "#A78682",
       background: "#131515",
       text: "#FAF9F6",
       titleColor: "#A78682",
       lineColor: "#FAF9F6",
       navColor: "#ECEDEE",
       heroTitle: " #525252",
+      heroSvg: "#A78682",
     },
     space: {},
     fonts,
@@ -37,17 +42,14 @@ export const darkTheme = createTheme({
 export const lightTheme = createTheme({
   type: "light",
   theme: {
+    stroke: {
+      strokeColor: "#000",
+    },
     colors: {
-      // brand colors
-      // background: "#E0DECA",
-      // background: "#FEE715FF",
-      // background: "#839788",
-      // background: "#EdEDdddE",
       background: "#EFEBE0",
       text: "#000",
-      titleColor: "#A78682",
-
-      // titleColor: "#B85042",
+      titleColor: "#131515",
+      primary: "#131515",
       lineColor: "#000001",
       navColor: "#000",
     },

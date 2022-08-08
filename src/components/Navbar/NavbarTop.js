@@ -1,21 +1,29 @@
-import { Link } from "@nextui-org/react";
-
+import { styled } from "@nextui-org/react";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter } from "react-router-dom";
 const NavbarTop = () => {
   const navLinks = ["about", "work", "contact"];
+  const MyLink = styled(HashLink, {
+    color: "$navColor",
+    fontSize: "$fs_sm",
+  });
+
   return (
     <nav className="overflow-x-scroll pointer-events-auto">
-      <ul className="nav-link space-x-3 sm:space-sx-10  h-9 flex items-center sms:pl-10 ">
-        {navLinks.map((item, key) => (
-          <Link
-            key={key}
-            href={`#${item}`}
-            css={{ color: "$navColor", fontSize: "$fs_sm" }}
-            className="hover:text-gray-400 capitalize text-ellipsis"
-            rel="prefetch"
-          >
-            {item}
-          </Link>
-        ))}
+      <ul className="bg-stone-6000 nav-link space-x-3 sm:space-sx-10 h-12 flex items-end ">
+        <BrowserRouter>
+          {navLinks.map((item, key) => (
+            <MyLink
+              key={key}
+              smooth={true}
+              to={`/#${item}`}
+              className="hover:text-gray-400 capitalize text-ellipsis "
+              rel="prefetch"
+            >
+              {item}
+            </MyLink>
+          ))}
+        </BrowserRouter>
       </ul>
     </nav>
   );
