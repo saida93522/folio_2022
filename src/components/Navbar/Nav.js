@@ -37,7 +37,7 @@ const Nav = (props) => {
 
           <NavbarTop />
           <Link
-            className="transition-all pointer-events-auto relative top-9"
+            className="transition-all pointer-events-auto relative top-6"
             css={{ color: "$titleColor" }}
           >
             <Toggle
