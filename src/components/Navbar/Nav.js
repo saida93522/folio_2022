@@ -27,7 +27,11 @@ const Nav = (props) => {
           wrap="wrap"
           className="nav mix-blend-mode-exclusion overflow-hidden "
         >
-          <Link href="/" className="nav-logo" css={{ color: "$svgColor" }}>
+          <Link
+            href="/"
+            className="fixed nav-logo"
+            css={{ color: "$svgColor" }}
+          >
             <Logo />
           </Link>
 
