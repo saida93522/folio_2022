@@ -4,6 +4,7 @@ import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
 import Work from "../components/Work/Work";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 import { Container } from "@nextui-org/react";
 
 const Home = ({ homeTheme, toggleTheme }) => {
@@ -13,12 +14,13 @@ const Home = ({ homeTheme, toggleTheme }) => {
 
       <main className="main relative overflow-x-hidden w-screen ">
         <div className="animate fixed -inset-1/2"></div>
-        <Container className="absolute bg-neutral-7000	xs:pl-5 sm:pl-14 md:pl-24 lg:pl-28 left-14 md:left-14">
+        <Container className="absolute xs:pl-5 sm:pl-14 md:pl-24 lg:pl-28 left-14 md:left-14">
           <Hero />
           <About />
           <Skills />
           <Work />
           <Contact />
+          <Footer />
         </Container>
       </main>
     </div>

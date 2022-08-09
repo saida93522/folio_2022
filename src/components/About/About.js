@@ -9,12 +9,10 @@ const About = () => {
       id="about"
       className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none relative"
     >
-      <div className="hidden sm:block hero-wrapper bg-right lg:bg-center w-full"></div>
-
       <Container id="about" className="space-y-2 md:space-y-4">
         <Header title={title} />
         <Grid.Container wrap="wrap" gap={2} justify={"center"}>
-          <Col span={10} className="bg-stone-50s0">
+          <Col span={10}>
             <Text className="fs_sm w-5/6 md:w-3/5" css={{ fontSize: "$fs_sm" }}>
               Hello! I'm Saida. I am an aspiring software developer based in
               Minneapolis, Minnesota. I specialize in web-based applications

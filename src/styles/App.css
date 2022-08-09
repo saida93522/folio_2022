@@ -19,7 +19,7 @@
   text-align: center;
   color: #dfdfd0;
   border: 2px solid #dfdfd087;
-  background: #615d5d48;
+  background: #26252548;
   width: 40px;
   height: 40px;
 }
@@ -116,19 +116,6 @@ section {
   padding: clamp(0.44rem, calc(-0.46rem + 5.1vw), 3.5rem);
 }
 
-.hero-wrapper {
-  position: absolute;
-  background-image: url("../assets/line_hijab_dark.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  mix-blend-mode: difference;
-  opacity: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/2;
-}
-
 .title,
 .subtitle,
 .nav-link,
@@ -182,10 +169,11 @@ section {
   max-width: 100%;
 }
 .svg-hero textPath {
-  font-size: 3rem;
+  font-size: 1.2rem;
   font-family: sans-serif;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  fill: rgba(96, 96, 96, 0.324);
-  background: #333;
+  letter-spacing: 1vw;
+  fill: #a78682;
+  stroke: currentColor;
+  opacity: 0.5;
 }

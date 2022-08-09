@@ -10,7 +10,7 @@ const NavbarTop = () => {
 
   return (
     <nav className="overflow-x-scroll pointer-events-auto">
-      <ul className="bg-stone-6000 nav-link space-x-3 sm:space-sx-10 h-12 flex items-end ">
+      <ul className="nav-link space-x-3  h-12 flex items-end ">
         <BrowserRouter>
           {navLinks.map((item, key) => (
             <MyLink

@@ -1,8 +1,8 @@
 import React from "react";
-import { useTheme, Container, Text, Grid, Col } from "@nextui-org/react";
-import { CgArrowDown } from "@react-icons/all-files/cg/CgArrowDown";
+import { useTheme, Container, Text, Grid } from "@nextui-org/react";
 import AnimateHero from "./AnimateHero";
 import { ReactComponent as Framer } from "../../assets/vector1.svg";
+
 const Hero = () => {
   const { theme } = useTheme();
 
@@ -36,34 +36,37 @@ const Hero = () => {
               </Text>
             </AnimateHero>
           </Grid>
+          <Grid>
+            <svg
+              className="relative svg-hero md:-bottom-14 right-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-50 0 500 480"
+            >
+              <defs>
+                <path
+                  d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                  id="textcircle"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="16s"
+                    type="rotate"
+                    from="0 250 250"
+                    to="360 250 250"
+                    repeatCount="indefinite"
+                  />
+                </path>
+              </defs>
+              <text dy="70" textLength="1220">
+                <textPath href="#textcircle">
+                  • Scroll To Learn More • Scroll To Learn More
+                </textPath>
+              </text>
+            </svg>
+          </Grid>
         </Grid.Container>
       </Container>
-      <svg
-        className="svg-hero bottom-0 right-0 "
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="-200 10 900 1000"
-      >
-        <title>Visit Site Link</title>
-        <defs>
-          <path
-            d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
-            id="textcircle"
-          >
-            <animateTransform
-              attributeName="transform"
-              begin="0s"
-              dur="16s"
-              type="rotate"
-              from="0 250 250"
-              to="360 250 250"
-              repeatCount="indefinite"
-            />
-          </path>
-        </defs>
-        <text dy="70" textLength="1220">
-          <textPath href="#textcircle">Scroll • down •</textPath>
-        </text>
-      </svg>
     </section>
   );
 };
