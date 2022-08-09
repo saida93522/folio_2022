@@ -14,7 +14,12 @@ module.exports = {
       wider: ".05em",
       widest: ".1vh",
     },
-    extend: {},
+    extend: {
+      colors: {
+        taupe: "#A78682",
+        dark_taupe: "#544442",
+      },
+    },
   },
   plugins: [],
 };

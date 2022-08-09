@@ -25,7 +25,7 @@ const NavbarLeft = () => {
         {socialLinks.map((item, key) => (
           <Link
             key={key}
-            href={`#${item.link}`}
+            href={`${item.link}`}
             target="_blank"
             css={{ color: "$navColor" }}
             className="nav-left-item pb-2"

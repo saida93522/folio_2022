@@ -15,14 +15,14 @@ import { SiFigma } from "@react-icons/all-files/si/SiFigma";
 const Skills = () => {
   const title = "skills";
   const softSkills = [
-    "Adaptable",
-    "TeamWork",
-    "Accountability",
+    "Adaptability",
     "Curious",
+    "Communication",
     "Creative",
-    "Problem Solver",
+    "Teamwork",
+    "Problem-Solver",
+    "Accountability",
     "Empathy",
-    "Resilient",
   ];
 
   return (

@@ -4,7 +4,7 @@ import { CgArrowTopRight } from "@react-icons/all-files/cg/CgArrowTopRight";
 import React from "react";
 
 const Contact = () => {
-  const title = "contact";
+  const title = "get In Touch";
   return (
     <section
       id="contact"
@@ -23,12 +23,15 @@ const Contact = () => {
 
           <Col span={10}>
             <Link
-              className="fs-lg break-word flex flex-wrap"
+              className="mt-10 btn break-word flex flex-wrap relative inline-block px-8 py-3 overflow-hidden border border-taupe group focus:outline-none focus:ring "
               href="mailto:saidahussen4@gmail.com"
               css={{ color: "$titleColor", fontSize: "$fs_md" }}
             >
-              saidahussen4@gmail.com
-              <CgArrowTopRight />
+              <span className="absolute inset-y-0 right-0 w-[2px] transition-all bg-dark_taupe group-hover:w-full group-active:bg-dark_taupe"></span>
+              <span className="relative text-sm font-medium transition-colors group-hover:text-white">
+                Say Hello
+              </span>
+              <CgArrowTopRight className="relative transition-colors group-hover:text-white" />
             </Link>
           </Col>
         </Grid.Container>

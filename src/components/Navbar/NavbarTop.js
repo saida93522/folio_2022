@@ -2,7 +2,7 @@ import { styled } from "@nextui-org/react";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 const NavbarTop = () => {
-  const navLinks = ["about", "work", "contact"];
+  const navLinks = ["about", "work", "contact", "skills"];
   const MyLink = styled(HashLink, {
     color: "$navColor",
     fontSize: "$fs_sm",

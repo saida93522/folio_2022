@@ -19,9 +19,6 @@ export const darkTheme = createTheme({
   type: "dark",
 
   theme: {
-    stroke: {
-      strokeColor: "#A78682",
-    },
     colors: {
       // brand colors
       primary: "#A78682",
@@ -31,7 +28,6 @@ export const darkTheme = createTheme({
       lineColor: "#FAF9F6",
       navColor: "#ECEDEE",
       heroTitle: " #525252",
-      heroSvg: "#A78682",
     },
     space: {},
     fonts,
@@ -42,9 +38,6 @@ export const darkTheme = createTheme({
 export const lightTheme = createTheme({
   type: "light",
   theme: {
-    stroke: {
-      strokeColor: "#000",
-    },
     colors: {
       background: "#EFEBE0",
       text: "#000",
