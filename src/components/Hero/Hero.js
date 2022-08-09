@@ -7,14 +7,18 @@ const Hero = () => {
   const { theme } = useTheme();
 
   return (
-    <section className="content min-h-screen flex items-center xs:pl-3 pr-4 overflow-none">
-      <Container className="space-y-s2 md:space-y-s4 bg-stone-7000">
-        <Grid.Container gap={2} justify={"space-around"} className="">
-          <Grid className="h-full flex flex-col justify-center ">
+    <section className="content min-h-screen flex items-end xs:pl-3 pr-4 overflow-none">
+      <Container className="bg-stone-7000">
+        <Grid.Container
+          align={"flex-end"}
+          justify={"space-around"}
+          className=""
+        >
+          <Grid sm className="">
             <AnimateHero>
               <Framer
                 className="hidden sm:block"
-                width="40%"
+                width="18vw"
                 height="100%"
                 style={{ color: theme.colors.primary.value }}
               />
@@ -22,7 +26,7 @@ const Hero = () => {
               <Text
                 i
                 className="hero-font block"
-                css={{ fontSize: "$fs_subHero", color: "$titleColor" }}
+                css={{ fontSize: "$fs_hero", color: "$titleColor" }}
               >
                 Saida Hussen
               </Text>
@@ -30,15 +34,14 @@ const Hero = () => {
               <Text
                 i
                 className="hero-font"
-                css={{ fontSize: "$fs_subHero", color: "$titleColor" }}
+                css={{ fontSize: "$fs_hero", color: "$titleColor" }}
               >
                 Portfolio 2022
               </Text>
             </AnimateHero>
-          </Grid>
-          <Grid>
+
             <svg
-              className="relative svg-hero md:-bottom-14 right-0 "
+              className="relative svg-hero md:-bottom-6 right-0 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="-50 0 500 480"
             >
